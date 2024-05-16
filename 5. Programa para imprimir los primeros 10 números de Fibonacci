@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num1 = 0, num2 = 1, num3, i, number;
+        Console.Write("Ingrese el número de elementos: ");
+        number = int.Parse(Console.ReadLine());
+        Console.Write(num1 + " " + num2 + " "); //imprimir 0 y 1  
+
+        for (i = 2; i < number; ++i) //loop empieza desde 2 porque 0 y 1 ya fueron impresos  
+        {
+            num3 = num1 + num2;
+            Console.Write(num3 + " ");
+            num1 = num2;
+            num2 = num3;
+        }
+    }
+}

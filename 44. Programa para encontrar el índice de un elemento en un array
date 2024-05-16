@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 5, 3, 8, 4, 2 };
+        Console.WriteLine("Ingrese el elemento a buscar:");
+        int elemento = Convert.ToInt32(Console.ReadLine());
+
+        int indice = Array.IndexOf(arr, elemento);
+        if (indice != -1)
+        {
+            Console.WriteLine("El elemento se encuentra en el índice: " + indice);
+        }
+        else
+        {
+            Console.WriteLine("El elemento no se encuentra en el array.");
+        }
+    }
+}

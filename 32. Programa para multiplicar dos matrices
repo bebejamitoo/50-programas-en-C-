@@ -1,0 +1,53 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[,] mat1 = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+
+        int[,] mat2 = {
+            {7, 8},
+            {9, 10},
+            {11, 12}
+        };
+
+        int filasMat1 = mat1.GetLength(0);
+        int columnasMat1 = mat1.GetLength(1);
+        int filasMat2 = mat2.GetLength(0);
+        int columnasMat2 = mat2.GetLength(1);
+
+        if (columnasMat1 != filasMat2)
+        {
+            Console.WriteLine("No se pueden multiplicar estas matrices.");
+            return;
+        }
+
+        int[,] producto = new int[filasMat1, columnasMat2];
+
+        for (int i = 0; i < filasMat1; i++)
+        {
+            for (int j = 0; j < columnasMat2; j++)
+            {
+                producto[i, j] = 0;
+                for (int k = 0; k < columnasMat1; k++)
+                {
+                    producto[i, j] += mat1[i, k] * mat2[k, j];
+                }
+            }
+        }
+
+        Console.WriteLine("El producto de las matrices es:");
+        for (int i = 0; i < filasMat1; i++)
+        {
+            for (int j = 0; j < columnasMat2; j++)
+            {
+                Console.Write(producto[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}

@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese el primer número:");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese el segundo número:");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+
+        Console.WriteLine("Después del intercambio, el primer número es: " + num1 + " y el segundo número es: " + num2);
+    }
+}

@@ -1,0 +1,12 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese una cadena:");
+        string str = Console.ReadLine();
+        string[] palabras = str.Split(' ');
+        Console.WriteLine("Número de palabras: " + palabras.Length);
+    }
+}

@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[,] mat = {
+            {1, 2},
+            {3, 4}
+        };
+
+        int determinante = (mat[0, 0] * mat[1, 1]) - (mat[0, 1] * mat[1, 0]);
+        Console.WriteLine("El determinante de la matriz es: " + determinante);
+    }
+}

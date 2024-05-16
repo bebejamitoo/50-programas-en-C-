@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese una cadena:");
+        string str = Console.ReadLine();
+        int longitud = 0;
+
+        foreach (char c in str)
+        {
+            longitud++;
+        }
+
+        Console.WriteLine("La longitud de la cadena es: " + longitud);
+    }
+}

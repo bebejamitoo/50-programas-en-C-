@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese el primer número binario:");
+        string bin1 = Console.ReadLine();
+        Console.WriteLine("Ingrese el segundo número binario:");
+        string bin2 = Console.ReadLine();
+
+        int num1 = Convert.ToInt32(bin1, 2);
+        int num2 = Convert.ToInt32(bin2, 2);
+
+        int suma = num1 + num2;
+        string binSuma = Convert.ToString(suma, 2);
+
+        Console.WriteLine("La suma de los números binarios es: " + binSuma);
+    }
+}

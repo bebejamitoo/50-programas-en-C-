@@ -1,0 +1,35 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[,] mat = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
+
+        int filas = mat.GetLength(0);
+        int columnas = mat.GetLength(1);
+
+        int[,] transpuesta = new int[columnas, filas];
+
+        for (int i = 0; i < filas; i++)
+        {
+            for (int j = 0; j < columnas; j++)
+            {
+                transpuesta[j, i] = mat[i, j];
+            }
+        }
+
+        Console.WriteLine("La transpuesta de la matriz es:");
+        for (int i = 0; i < columnas; i++)
+        {
+            for (int j = 0; j < filas; j++)
+            {
+                Console.Write(transpuesta[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}

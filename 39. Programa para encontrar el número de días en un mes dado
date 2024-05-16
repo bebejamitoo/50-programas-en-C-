@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese el número del mes (1-12):");
+        int mes = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese el año:");
+        int año = Convert.ToInt32(Console.ReadLine());
+
+        int dias = DateTime.DaysInMonth(año, mes);
+        Console.WriteLine("El mes tiene " + dias + " días.");
+    }
+}

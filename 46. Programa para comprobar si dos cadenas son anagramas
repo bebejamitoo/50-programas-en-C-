@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese la primera cadena:");
+        string str1 = Console.ReadLine();
+        Console.WriteLine("Ingrese la segunda cadena:");
+        string str2 = Console.ReadLine();
+
+        char[] charArr1 = str1.ToCharArray();
+        char[] charArr2 = str2.ToCharArray();
+        
+        Array.Sort(charArr1);
+        Array.Sort(charArr2);
+
+        if (new string(charArr1) == new string(charArr2))
+        {
+            Console.WriteLine("Las cadenas son anagramas.");
+        }
+        else
+        {
+            Console.WriteLine("Las cadenas no son anagramas.");
+        }
+    }
+}

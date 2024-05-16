@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 5, 3, 8, 4, 2 };
+        int max = arr[0];
+        int min = arr[0];
+
+        foreach (int num in arr)
+        {
+            if (num > max)
+            {
+                max = num;
+            }
+            if (num < min)
+            {
+                min = num;
+            }
+        }
+
+        int diferencia = max - min;
+        Console.WriteLine("La diferencia entre el número más grande y el más pequeño es: " + diferencia);
+    }
+}

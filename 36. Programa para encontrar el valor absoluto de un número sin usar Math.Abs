@@ -1,0 +1,12 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese un número:");
+        int num = Convert.ToInt32(Console.ReadLine());
+        int valorAbsoluto = num < 0 ? -num : num;
+        Console.WriteLine("El valor absoluto es: " + valorAbsoluto);
+    }
+}

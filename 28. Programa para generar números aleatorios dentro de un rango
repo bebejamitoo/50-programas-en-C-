@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Random rand = new Random();
+        Console.WriteLine("Ingrese el límite inferior:");
+        int min = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ingrese el límite superior:");
+        int max = Convert.ToInt32(Console.ReadLine());
+
+        int numAleatorio = rand.Next(min, max + 1);
+        Console.WriteLine("Número aleatorio generado: " + numAleatorio);
+    }
+}

@@ -1,0 +1,15 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 5, 3, 8, 4, 2 };
+        Array.Sort(arr);
+        Console.WriteLine("Array ordenado:");
+        foreach (int val in arr)
+        {
+            Console.Write(val + " ");
+        }
+    }
+}

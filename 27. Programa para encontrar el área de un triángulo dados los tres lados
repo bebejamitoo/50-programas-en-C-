@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese el primer lado del triángulo:");
+        double a = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Ingrese el segundo lado del triángulo:");
+        double b = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Ingrese el tercer lado del triángulo:");
+        double c = Convert.ToDouble(Console.ReadLine());
+
+        double s = (a + b + c) / 2;
+        double area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+
+        Console.WriteLine("El área del triángulo es: " + area);
+    }
+}

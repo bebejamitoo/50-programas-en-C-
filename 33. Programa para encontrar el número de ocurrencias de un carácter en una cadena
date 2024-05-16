@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese una cadena:");
+        string str = Console.ReadLine();
+        Console.WriteLine("Ingrese un carácter:");
+        char caracter = Console.ReadLine()[0];
+
+        int ocurrencias = 0;
+        foreach (char c in str)
+        {
+            if (c == caracter)
+            {
+                ocurrencias++;
+            }
+        }
+
+        Console.WriteLine("El carácter '" + caracter + "' aparece " + ocurrencias + " veces en la cadena.");
+    }
+}
